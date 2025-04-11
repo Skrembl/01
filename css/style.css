@@ -3,7 +3,7 @@ body {
     font-family: "PT Mono", sans-serif;
     background-image: url("../images/bg-stars.png"), url("../images/shadow.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     background-attachment: fixed;
     color: #ffffff;
     font-size: 20px;
@@ -19,6 +19,14 @@ body {
     align-items: center;
     padding: 44px 390px;
     font-size: 18px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.adaptive {
+    display: none;
 }
 
 .navbar {
@@ -1431,11 +1439,11 @@ body {
     }
 
     .footer-block__info .default-logo {
-        display: block;
+        display: none;
     }
 
     .footer-block__info .new-logo {
-        display: none;
+        display: block;
     }
 
     .footer-navbar {
@@ -1480,12 +1488,22 @@ body {
         max-width: 170px;
     }
 
-    .default-navbar {
+    .container-navbar .logo,
+    .container-navbar .navbar,
+    .container-navbar .twitter-btn {
+        display: block;
+    }
+
+    .burger-menu {
         display: none;
     }
 
     .adaptive {
         display: none;
+    }
+
+    .adaptive.active {
+        display: flex;
     }
 
     .header-info {
@@ -1985,6 +2003,14 @@ body {
         align-items: center;
     }
 
+    .footer-block__info .default-logo {
+        display: block;
+    }
+
+    .footer-block__info .new-logo {
+        display: none;
+    }
+
     .footer-navbar {
         display: flex;
         align-items: center;
@@ -2030,11 +2056,16 @@ body {
         max-width: 127px;
     }
 
-    .default-navbar {
+    .container-navbar .navbar,
+    .container-navbar .twitter-btn {
         display: none;
     }
 
-    .logo {
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-menu.active {
         display: block;
     }
 
@@ -2042,14 +2073,6 @@ body {
         display: block;
         margin: 0 auto;
         margin-bottom: 20px !important;
-    }
-
-    .navbar {
-        display: flex;
-    }
-
-    .active {
-        display: none;
     }
 
     .close-menu {
@@ -2066,7 +2089,19 @@ body {
         width: 320px;
         margin-top: 580px;
         padding: 16px 16px 32px 16px;
-        display: block;
+        display: none;
+        flex-direction: column;
+        background-color: #222930;
+        z-index: 1000;
+        right: 0;
+    }
+
+    .adaptive.active {
+        position: absolute;
+        width: 320px;
+        margin-top: 580px;
+        padding: 16px 16px 32px 16px;
+        display: flex;
         flex-direction: column;
         background-color: #222930;
         z-index: 1000;
@@ -2079,7 +2114,7 @@ body {
         margin-bottom: 32px;
     }
 
-    .head-navbar li {
+    .adaptive li {
         margin: 0 !important;
     }
 
@@ -2742,25 +2777,23 @@ body {
         max-width: 127px;
     }
 
-    .default-navbar {
+    .container-navbar .logo,
+    .container-navbar .navbar,
+    .container-navbar .twitter-btn {
         display: none;
     }
 
-    .logo {
-        display: none;
+    .container-navbar .logo {
+        display: block;
     }
+
+     .burger-menu.active {
+        display: block;
+     }
 
     .logo-menu {
         margin: 0 auto;
         margin-bottom: 20px !important;
-    }
-
-    .navbar {
-        display: block;
-    }
-
-    .active {
-        display: none;
     }
 
     .close-menu {
@@ -2773,6 +2806,18 @@ body {
     }
 
     .adaptive {
+        position: absolute;
+        width: 320px;
+        margin-top: 580px;
+        padding: 16px 16px 32px 16px;
+        display: none;
+        flex-direction: column;
+        background-color: #222930;
+        z-index: 1000;
+        right: 0;
+    }
+
+    .adaptive.active {
         position: absolute;
         width: 320px;
         margin-top: 580px;

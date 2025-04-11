@@ -6,7 +6,7 @@
     <title>Superdao</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <script src="./app.js"></script>
+    <script src="./app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
@@ -14,14 +14,13 @@
 <body>
     <header class="header">
         <div class="container-navbar">
-            <div class="default-navbar">
                 <a href="#!">
                     <img src="./images/icons/logo.svg" class="logo">
                 </a>
                 <div class="burger-menu active">
-                    <a href="#!">
-                        <img src="./images/burger-menu.svg">
-                    </a>
+                        <a href="#!">
+                            <img src="./images/burger-menu.svg">
+                        </a>
                 </div>
                 <div class="navbar">
                     <ul class="head-navbar">
@@ -29,16 +28,15 @@
                         <li><a href="#!">About</a></li>
                         <li><a href="#!">Jobs</a></li>
                     </ul>
-                    <button class="twitter-btn">
-                        <a href="#!">
-                            <img src="./images/icons/head-twitter.svg">
-                            Twitter
-                        </a>
-                    </button>
                 </div>
-            </div>
+                <button class="twitter-btn">
+                    <a href="#!">
+                        <img src="./images/icons/head-twitter.svg">
+                        Twitter
+                    </a>
+                </button>
 
-            <div class="adaptive">
+            <div class="adaptive active">
                 <div class="close-menu">
                     <a href="#!">
                         <img src="./images/close-menu.svg">
