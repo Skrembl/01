@@ -2065,7 +2065,7 @@ body {
         display: block;
     }
 
-    .burger-menu.active {
+    .burger-menu .active {
         display: block;
     }
 
@@ -2787,7 +2787,7 @@ body {
         display: block;
     }
 
-     .burger-menu.active {
+     .burger-menu {
         display: block;
      }
 
@@ -3217,6 +3217,10 @@ body {
     }
 
     .roadmap-p .full-br {
+        display: none;
+    }
+
+    .roadmap-p .md-br {
         display: none;
     }
 
